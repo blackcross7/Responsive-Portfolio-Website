@@ -22,7 +22,7 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Kartikay",
+                "Kartikay Kandpal",
                 1000,
                 "Web Developer",
                 1000,
@@ -39,9 +39,7 @@ const HeroSection = () => {
           <p
             className="text-base sm:text-lg mb-6 lg:text-xl"
             style={{
-              background: "linear-gradient(to right, white, purple)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              color: "white",
             }}
           >
             I am currently pursuing my Bachelor’s degree in Computer Science and Engineering at Chandigarh University under the University School of Engineering. As an aspiring software professional, my goal is to step into a challenging environment that fosters innovation and allows me to enhance my technical and problem-solving skills.
@@ -61,7 +59,7 @@ const HeroSection = () => {
               download // Add this attribute to enable downloading
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                Download Resume
               </span>
             </Link>
           </div>
@@ -72,7 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-12 md:col-span-5 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] relative mx-auto md:mx-0">
+          <div className="rounded-full bg-[#18181880] w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] relative mx-auto md:mx-0">
             <Image
               src="/images/hero-image.png"
               alt="hero image"

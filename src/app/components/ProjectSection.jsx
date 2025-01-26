@@ -1,60 +1,51 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+import MnLTag from "./MnLTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/p.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/p.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/p.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/p.png",
+    description: "A Reactive Portfolio Website made using Next.js, CSS, HTML, Tailwind CSS, JavaScript and Framer Motion. Code SOurce available on Github",
+    image: "/images/Project.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
+    id: 2,
+    title: "Solar System Simulation-3D",
+    description: "A 3D Solar System Simulation made using Unity3D. Game is available on itch.io. Source Code available on Github. Hover and click over the image to access.",
+    image: "/images/Solar System Simulator.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/blackcross7/Solar-System-Simulator-3D",
+    previewUrl: "https://21bcs10038.itch.io/solar-system",
+  },
+  {
+    id: 3,
+    title: "Space Blast",
+    description: "A 2D Space Shooter Game made using Unity Engine with the help of C# script. Game is available on itch.io. Source Code available on Github. Hover and click over the image to access",
+    image: "/images/Space Blast.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/blackcross7/SpaceBlast",
+    previewUrl: "https://21bcs10038.itch.io/space-blast",
+  },
+  {
+    id: 4,
+    title: "SpaceStronaut",
+    description: "Guided Project on Unity Engine. A game where you have to dodge the obstacles and destroy obstacles. Game is available on itch.io. Source Code available on Github. Hover and click over the image to access.",
+    image: "/images/SpaceStronaut.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/blackcross7/SuperStronaut",
+    previewUrl: "https://21bcs10038.itch.io/spacestronout",
+  },
+  {
     id: 5,
     title: "React Firebase Template",
     description: "Authentication and CRUD operations",
-    image: "/images/p.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/p.png",
+    image: "/images/Project.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -85,17 +76,17 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
+        <MnLTag
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
         />
-        <ProjectTag
+        <MnLTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
         />
-        <ProjectTag
+        <MnLTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
@@ -109,11 +100,6 @@ const ProjectsSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: project.id * 0.4 }}
-            style={{
-              backgroundImage: `url(${project.image})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
           >
             <ProjectCard
               key={project.id}
