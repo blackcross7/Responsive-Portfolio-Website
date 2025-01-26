@@ -42,19 +42,19 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative text-center sm:text-center"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] mb-4 max-w-md mx-auto">
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 justify-center sm:justify-center">
           <Link href="https://github.com/blackcross7">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
@@ -69,11 +69,11 @@ const EmailSection = () => {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
+          <form className="flex flex-col items-center sm:items-center" onSubmit={handleSubmit}>
+            <div className="mb-6 w-full text-left">
               <label
                 htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
+                className="text-white block mb-2 text-sm font-bold"
               >
                 Your email
               </label>
@@ -86,10 +86,10 @@ const EmailSection = () => {
                 placeholder="jacob@google.com"
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-6 w-full text-left">
               <label
                 htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-white block text-sm mb-2 font-bold"
               >
                 Subject
               </label>
@@ -102,10 +102,10 @@ const EmailSection = () => {
                 placeholder="Just saying hi"
               />
             </div>
-            <div className="mb-6">
+            <div className="mb-6 w-full text-left">
               <label
                 htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-white block text-sm mb-2 font-bold"
               >
                 Message
               </label>
