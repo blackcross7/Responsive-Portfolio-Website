@@ -43,12 +43,12 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/Project.png",
+    title: "Yoga-Pose_detection",
+    description: "Used TensorFlow and OpenPose library to build a moel that corrects your Yoga Postures",
+    image: "/images/YogaPose.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
+    previewUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
   },
 ];
 
