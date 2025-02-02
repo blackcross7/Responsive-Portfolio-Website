@@ -21,51 +21,68 @@ body {
 }
 
 .neon-border {
-  border: 5px solid #0ff;
-  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+  border: 5px solid #00bfff; /* Bright blue */
+  box-shadow: 0 0 2px #00bfff, 0 0 4px #00bfff, 0 0 6px #00bfff, 0 0 8px #00bfff; /* Adjusted values */
   border-radius: 10px;
   animation: neon 2s infinite alternate;
+  background-color: transparent; /* Remove background color */
 }
 
 @keyframes neon {
   0% {
-    border-color: #0ff;
-    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
+    border-color: #00bfff; /* Bright blue */
+    box-shadow: 0 0 2px #00bfff, 0 0 4px #00bfff, 0 0 6px #00bfff, 0 0 8px #00bfff; /* Adjusted values */
+  }
+  25% {
+    border-color: #c0c0c0; /* Silver */
+    box-shadow: 0 0 2px #c0c0c0, 0 0 4px #c0c0c0, 0 0 6px #c0c0c0, 0 0 8px #c0c0c0; /* Adjusted values */
   }
   50% {
-    border-color: #f0f;
-    box-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 15px #f0f, 0 0 20px #f0f;
+    border-color: #808080; /* Grey */
+    box-shadow: 0 0 2px #808080, 0 0 4px #808080, 0 0 6px #808080, 0 0 8px #808080; /* Adjusted values */
+  }
+  75% {
+    border-color: #ff69b4; /* Hot pink */
+    box-shadow: 0 0 2px #ff69b4, 0 0 4px #ff69b4, 0 0 6px #ff69b4, 0 0 8px #ff69b4; /* Adjusted values */
   }
   100% {
-    border-color: #ff0;
-    box-shadow: 0 0 5px #ff0, 0 0 10px #ff0, 0 0 15px #ff0, 0 0 20px #ff0;
+    border-color: #32cd32; /* Lime green */
+    box-shadow: 0 0 2px #32cd32, 0 0 4px #32cd32, 0 0 6px #32cd32, 0 0 8px #32cd32; /* Adjusted values */
   }
 }
 
 .background-image {
-  background: url('/images/background5.jpg') no-repeat center center fixed;
+  background: url('/images/background6.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 .neon-tile {
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(192, 192, 192, 0.5); /* Silver */
+  box-shadow: 0 0 2px rgba(192, 192, 192, 0.5), 0 0 4px rgba(192, 192, 192, 0.5), 0 0 6px rgba(192, 192, 192, 0.5), 0 0 8px rgba(192, 192, 192, 0.5); /* Adjusted values */
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent; /* Remove background color */
   animation: neon-tile 2s infinite alternate;
 }
 
 @keyframes neon-tile {
   0% {
-    background-color: rgba(255, 0, 0, 0.3);
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3), 0 0 10px rgba(255, 0, 0, 0.3), 0 0 15px rgba(255, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.3);
+    border-color: rgba(192, 192, 192, 0.5); /* Silver */
+    box-shadow: 0 0 2px rgba(192, 192, 192, 0.5), 0 0 4px rgba(192, 192, 192, 0.5), 0 0 6px rgba(192, 192, 192, 0.5), 0 0 8px rgba(192, 192, 192, 0.5); /* Adjusted values */
+  }
+  25% {
+    border-color: rgba(128, 128, 128, 0.5); /* Grey */
+    box-shadow: 0 0 2px rgba(128, 128, 128, 0.5), 0 0 4px rgba(128, 128, 128, 0.5), 0 0 6px rgba(128, 128, 128, 0.5), 0 0 8px rgba(128, 128, 128, 0.5); /* Adjusted values */
   }
   50% {
-    background-color: rgba(0, 255, 0, 0.3);
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3), 0 0 10px rgba(0, 255, 0, 0.3), 0 0 15px rgba(0, 255, 0, 0.3), 0 0 20px rgba(0, 255, 0, 0.3);
+    border-color: rgba(0, 191, 255, 0.5); /* Bright blue */
+    box-shadow: 0 0 2px rgba(0, 191, 255, 0.5), 0 0 4px rgba(0, 191, 255, 0.5), 0 0 6px rgba(0, 191, 255, 0.5), 0 0 8px rgba(0, 191, 255, 0.5); /* Adjusted values */
+  }
+  75% {
+    border-color: rgba(255, 105, 180, 0.5); /* Hot pink */
+    box-shadow: 0 0 2px rgba(255, 105, 180, 0.5), 0 0 4px rgba(255, 105, 180, 0.5), 0 0 6px rgba(255, 105, 180, 0.5), 0 0 8px rgba(255, 105, 180, 0.5); /* Adjusted values */
   }
   100% {
-    background-color: rgba(0, 0, 255, 0.3);
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3), 0 0 10px rgba(0, 0, 255, 0.3), 0 0 15px rgba(0, 0, 255, 0.3), 0 0 20px rgba(0, 0, 255, 0.3);
+    border-color: rgba(50, 205, 50, 0.5); /* Lime green */
+    box-shadow: 0 0 2px rgba(50, 205, 50, 0.5), 0 0 4px rgba(50, 205, 50, 0.5), 0 0 6px rgba(50, 205, 50, 0.5), 0 0 8px rgba(50, 205, 50, 0.5); /* Adjusted values */
   }
 }
