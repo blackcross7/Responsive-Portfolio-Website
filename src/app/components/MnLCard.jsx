@@ -32,7 +32,7 @@ const MnLCard = ({ imgUrl, title, description, dropdownItems }) => {
           </button>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4 text-center sm:text-center">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
         {isDropdownOpen && (
@@ -48,7 +48,7 @@ const MnLCard = ({ imgUrl, title, description, dropdownItems }) => {
                     height={100}
                     className="rounded-lg transform transition-transform duration-300 group-hover:scale-110"
                   />
-                  <span className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-bold">
                     {item.title}
                   </span>
                 </a>

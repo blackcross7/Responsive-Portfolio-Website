@@ -183,10 +183,18 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/c.png" alt="about-image" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+        <Image
+          src="/images/c.png"
+          alt="about-image"
+          width={500}
+          height={500}
+          className="mx-auto"
+        />
+        <div className="mt-4 md:mt-0 text-left md:text-left flex flex-col h-full">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center md:text-left">
+            About Me
+          </h2>
+          <p className="text-base lg:text-lg text-center md:text-left">
             Hello! I'm Kartikay Kandpal, a Computer Science Engineering student at Chandigarh University. 
             I'm passionate about technology and innovation, with skills in C++, Python, SQL, JavaScript, and more. 
             I've worked on projects like a responsive portfolio website, yoga pose detection, and sentiment analysis. 
@@ -194,7 +202,7 @@ const AboutSection = () => {
             My goal is to leverage my academic knowledge and personal abilities to drive positive growth for my team and company while developing into a well-rounded professional. 
             Let's connect and create something amazing together!
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-center md:justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -213,14 +221,12 @@ const AboutSection = () => {
             >
               Certifications
             </TabButton>
-
             <TabButton
               selectTab={() => handleTabChange("platforms")}
               active={tab === "platforms"}
             >
               Platforms
             </TabButton>
-
           </div>
           <div className="mt-8">
             {TAB_DATA.find((tabItem) => tabItem.id === tab)?.content}

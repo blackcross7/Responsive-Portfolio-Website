@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "A Reactive Portfolio Website made using Next.js, CSS, HTML, Tailwind CSS, JavaScript and Framer Motion. Code SOurce available on Github",
+    description: "A Reactive Portfolio Website made using Next.js, CSS, HTML, Tailwind CSS, JavaScript and Framer Motion. Code Source available on Github",
     image: "/images/Project.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
@@ -43,12 +43,12 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/Project.png",
+    title: "Yoga-Pose_detection",
+    description: "Used TensorFlow and OpenPose library to build a moel that corrects your Yoga Postures",
+    image: "/images/YogaPose.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
+    previewUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
   },
 ];
 
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 sm:justify-center">
         {filteredProjects.map((project) => (
           <motion.li
             key={project.id}
@@ -108,6 +108,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              className="text-center sm:text-center"
             />
           </motion.li>
         ))}
