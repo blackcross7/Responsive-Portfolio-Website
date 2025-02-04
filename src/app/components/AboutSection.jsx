@@ -59,6 +59,8 @@ const TAB_DATA = [
             <th className="px-4 py-2 border border-purple-500">Institution</th>
             <th className="px-4 py-2 border border-purple-500">Degree</th>
             <th className="px-4 py-2 border border-purple-500">Duration</th>
+            <th className="px-4 py-2 border border-purple-500">CGPA/ Percentage</th>
+
           </tr>
         </thead>
         <tbody>
@@ -66,11 +68,21 @@ const TAB_DATA = [
             <td className="border border-purple-500 px-4 py-2">Chandigarh University</td>
             <td className="border border-purple-500 px-4 py-2">Bachelors in Computer Science Engineering</td>
             <td className="border border-purple-500 px-4 py-2">Aug 2021 - May 2025</td>
+            <td className="border border-purple-500 px-4 py-2">7.1</td>
+
           </tr>
           <tr className="transition duration-300 ease-in-out transform hover:scale-105">
             <td className="border border-purple-500 px-4 py-2">Vision Valley School</td>
             <td className="border border-purple-500 px-4 py-2">Intermediate - PCM</td>
             <td className="border border-purple-500 px-4 py-2">Mar 2020 - April 2021</td>
+            <td className="border border-purple-500 px-4 py-2">88%</td>
+
+          </tr>
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-purple-500 px-4 py-2">Vision Valley School</td>
+            <td className="border border-purple-500 px-4 py-2">High School</td>
+            <td className="border border-purple-500 px-4 py-2">Mar 2018 - April 2019</td>
+            <td className="border border-purple-500 px-4 py-2">88.6%</td>
           </tr>
         </tbody>
       </table>
@@ -82,12 +94,30 @@ const TAB_DATA = [
     content: (
       <table className="table-auto w-full text-left border-collapse">
         <thead>
+
           <tr className="bg-gradient-to-r from-green-400 to-teal-500 text-white">
             <th className="px-4 py-2 border border-green-500">Certification</th>
             <th className="px-4 py-2 border border-green-500">Institution</th>
           </tr>
         </thead>
         <tbody>
+
+        <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://drive.google.com/file/d/1kKwzoBrweeKIT8wrgRvRv8yE3zyCuJsl/view" target="_blank" rel="noopener noreferrer">
+                Data Analytics
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">Deloitte</td>
+          </tr>
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://drive.google.com/file/d/1-nJ6TdlI7clrXynBLcmRCrmGJNmKgNOf/view" target="_blank" rel="noopener noreferrer">
+                GenAI
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">BCGX</td>
+          </tr>
           <tr className="transition duration-300 ease-in-out transform hover:scale-105">
             <td className="border border-green-500 px-4 py-2">
               <a href="https://www.coursera.org/account/accomplishments/verify/VZ2WCY4G5PVH" target="_blank" rel="noopener noreferrer">
@@ -127,6 +157,60 @@ const TAB_DATA = [
               </a>
             </td>
             <td className="border border-green-500 px-4 py-2">NPTEL</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/Y3K6AH9F9WTN" target="_blank" rel="noopener noreferrer">
+                Deep Learning and Reinforcement Learning
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">IBM</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/36TVUZP7G2NY" target="_blank" rel="noopener noreferrer">
+                Java as a Second Language
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">Learn Quest</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/Y3ETL8YPBY1O" target="_blank" rel="noopener noreferrer">
+                Mobile Development 
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">Meta</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/LCGWXNAP8EDS" target="_blank" rel="noopener noreferrer">
+                Introduction to Web Development with HTML, CSS and JavaScript
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">IBM</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/JZ99GV2XXUST" target="_blank" rel="noopener noreferrer">
+                Build Dynamic UI Websites
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">Google</td>
+          </tr>
+
+          <tr className="transition duration-300 ease-in-out transform hover:scale-105">
+            <td className="border border-green-500 px-4 py-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/V6MMT25EC4QS" target="_blank" rel="noopener noreferrer">
+                Introduction to Computer Vision and Image Processing
+              </a>
+            </td>
+            <td className="border border-green-500 px-4 py-2">IBM</td>
           </tr>
         </tbody>
       </table>

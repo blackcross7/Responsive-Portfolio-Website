@@ -43,12 +43,22 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Yoga-Pose_detection",
-    description: "Used TensorFlow and OpenPose library to build a moel that corrects your Yoga Postures",
+    title: "Yoga Pose Detection",
+    description: "Used TensorFlow and OpenPose library to build a moel that corrects your Yoga Postures by capturing your live Posture and creating Web Interface using Flask, HTML, CSS and JavaScript",
     image: "/images/YogaPose.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
     previewUrl: "https://github.com/blackcross7/Yoga-Pose-Detection",
+  },
+
+  {
+    id: 6,
+    title: "AI Text Summarizer",
+    description: "Used Transformer Models like BERT, Pegasus and T5 to do operations on text, flask to handle the Web Services and CSS, HTML and Javascript to build a web interface",
+    image: "/images/txtsum.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/blackcross7/AI-Text_Summarization",
+    previewUrl: "https://github.com/blackcross7/AI-Text_Summarization",
   },
 ];
 
